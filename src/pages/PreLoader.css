@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+.bangers{
+  font-family: 'Bangers', cursive;
+}
+
+.narutorun{
+  animation: run 7s linear infinite forwards ;
+}
+@keyframes run {
+  0%{
+    left: -60%;
+  }
+
+  100%{
+   left: 100%;
+  }
+}
+.textp{
+ 
+  position: relative;
+}
+.textp{
+  position: absolute;
+  content: '';
+  left: 120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%,#000 5% ,#000 100%);
+  animation: fade 7s linear infinite forwards;
+}
+@keyframes fade{
+  0%{
+    left:-20%;
+
+  }
+ 
+  100%{
+    left: 20%;
+  }
+}
+.textbox{
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply;
+}
+.bangers{
+  transform: scale(0.94);
+
+  animation: scale 6s 0s forwards infinite cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.preloadc {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(1px);
+   
+  
+}
+
+.preloadc:nth-child(1) {
+  animation: fade--- 7s 0.2s forwards infinite cubic-bezier(0.11, 0, 0.5, 0);
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(248, 240, 33), 0 0 15px rgb(208, 230, 13);
+}
+
+.preloadc:nth-child(2) {
+  animation: fade--- 7s 0.8s  forwards infinite cubic-bezier(0.11, 0, 0.5, 0);
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(248, 166, 33), 0 0 15px rgb(230, 154, 13);
+}
+
+.preloadc:nth-child(3) {
+  animation: fade--- 7s 1.5s forwards infinite cubic-bezier(0.11, 0, 0.5, 0);
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(243, 237, 58), 0 0 15px rgb(230, 251, 45);
+}
+
+.preloadc:nth-child(4) {
+  animation: fade--- 7s 2.0s forwards infinite cubic-bezier(0.11, 0, 0.5, 0);
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(78, 255, 237), 0 0 15px rgb(13, 154, 230);
+}
+
+.preloadc:nth-child(5) {
+  animation: fade--- 7s 2.5s forwards infinite cubic-bezier(0.11, 0, 0.5, 0);
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(239, 165, 127), 0 0 15px rgb(238, 172, 73);
+}
+
+.preloadc:nth-child(6) {
+  animation: fade--- 7s 3.0s forwards infinite cubic-bezier(0.11, 0, 0.5, 0);
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(248, 166, 33), 0 0 15px rgb(230, 154, 13);
+}
+
+.preloadc:nth-child(7) {
+  animation: fade--- 7s 3.5s forwards infinite cubic-bezier(0.11, 0, 0.5, 0);
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(171, 81, 240), 0 0 15px rgb(175, 36, 235);
+}
+
+.preloadc:nth-child(8) {
+  animation: fade--- 7s 3.7s forwards infinite  cubic-bezier(0.11, 0, 0.5, 0);
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(89, 240, 237), 0 0 15px rgb(29, 198, 189);
+}
+
+.preloadc:nth-child(9) {
+  animation: fade--- 7s 4s forwards infinite cubic-bezier(0.11, 0, 0.5, 0);
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(68, 110, 247), 0 0 15px rgb(58, 45, 236);
+}
+
+@media screen and (max-width: 768px) {
+  .bangers {
+    font-size: 100px;
+/* Adjust the font size for smaller screens */
+  }
+
+  .narutorun {
+    size: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bangers {
+    font-size: 50px;
+/* Adjust the font size for smaller screens */
+  }
+  .textbox{
+    mix-blend-mode: normal;
+    
+  }
+
+  .narutorun {
+    size: 10%;
+  }
+}
+
+@keyframes fade--- {
+  0%{
+    opacity: 0.03;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
